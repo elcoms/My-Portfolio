@@ -6,14 +6,13 @@
 
 
 .intro{
-  background: url("images/tempheader.png") no-repeat center top;
-  background-size: cover;
-  background-attachment: scroll;
-  height: 540px;
-  width: 100%;
-  position: fixed;
+  background-image: url("images/tempheader.png");
+  background-position: center;
+  padding: 100px 100px;
   color: #000000
-  margin: 0;
-  padding: 0;
+}
+
+.intro-heading{
   text-align: center;
+  background-image: #0;
 }
