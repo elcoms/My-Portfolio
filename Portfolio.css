@@ -1,16 +1,16 @@
 *{
   border: 2px;
   border-style: solid;
+  margin: 0;
 }
 
-.intro{
-  background-image: url("images/tempheader.png");
-  background-position: center;
-  padding: 100px 100px;
-  color: #000000
-}
-
-.intro-heading{
-  text-align: center;
-  background-image: #0;
+.header{
+  object-fit: cover;
+  display: block;
+  height: auto;
+  min-width: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
