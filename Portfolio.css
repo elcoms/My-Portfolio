@@ -1,6 +1,11 @@
 @font-face {
-  font-family: "introFont";
-  src: url("fonts/Generica-Bold.otf");
+  font-family: introFont;
+  src: url("fonts/Generica.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: contentFont;
+  src: url("fonts/Cabin-Medium.ttf") format('truetype');
 }
 
 *{
@@ -18,47 +23,66 @@ div{
 }
 
 .background{
-  max-height: 2700px;
-  width: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  max-height: 2700px;
   position: relative;
   background: url("images/background.png") no-repeat center top;
 }
 
-.intro{
+.filter{
+  top: 0;
+  left: 0;
   width: 100%;
+  max-height: 2700px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.intro{
+  top: 50%;
+  width: 100%;
+  z-index: 100;
   line-height: 40px;
   position: absolute;
   text-align: center;
-  top: 50%;
   transform: translateY(-50%);
   color: #cce5ff;
-  font-family: "introFont", Helvetica, sans-serif;
+  font-size: 28px;
+  font-family: introFont, Helvetica, sans-serif;
 }
 
 .content-header{
   width: 100%;
   top: 50px;
+  text-shadow: black 0px 2px;
   position: absolute;
   text-align: center;
   display: inline-block;
+  font-size: 48px;
+  font-size: 2.5vw;
+  font-family: contentFont, helvetica, sans-serif;
 }
 
 .content{
   top: 150px;
   width: 768px;
+  color: white;
   position: absolute;
   display: inline-block;
   text-align: center;
   line-height: 50px;
+  font-size: 22px;
+  font-size: 1.2vw;
+  font-family: contentFont, helvetica, sans-serif;
 }
 
 .content ul{
-    width: auto;
-    position: absolute;
-    display: inline-table;
-    text-align: left;
+  width: auto;
+  text-align: left;
+  position: relative;
+  display: inline-table;
 }
 
 .content div{
